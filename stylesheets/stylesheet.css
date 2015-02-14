@@ -1,16 +1,41 @@
+@media (min-width: 480px) {
+    nav ul li {
+        display: inline;
+        padding: 0 10px 0 10px;
+    }
+    
+    #home, #home2 {
+        background-image: url(/images/roomies.jpg)
+    }
+    
+    #about {
+        background-image: url(/images/about.png);
+    }
+    
+    span {
+        line-height: 32px;
+        padding: 0 120px 0 120px;
+        font-size: 36pt;
+    }
+    
+    #work li {
+        display: inline;
+        overflow: hidden;
+    }
+
+}
+
 @media (max-width: 480px) {
     #about {
         background-image: url(/images/about-480.jpg);
-        width: 480px;
-        height: 320px;
     }
-}
-
-@media (min-width: 960px) and (max-width: 1024) {
-    #about {
-        background-image: url(/images/about.png);
-        width: 1024px;
-        height: 768px;
+    
+    ul li a {
+        font-size: 24pt;   
+    }
+    
+    span {
+        font-size: 36pt;    
     }
 }
 
@@ -21,44 +46,97 @@ html, body {
     background-color: #ebebeb;
     font-family: 'PT Sans', serif;
 }
-.div {
-    width:100%;
-    height:100%;
-}
+
+/* navigation */
+
 .menu {
     position:fixed;
     display: block;
     top:20px;
     left:50%;
-    margin-left: -13px;
-}
-.menudown {
-    position:fixed;
-    top:-100px;
-    left: 50%;
-    margin-left: -76px;
-    width: 240px;
+/*    margin-left: -13px;*/
+    cursor: pointer;
 }
 
+nav {
+    position: fixed;
+    top:-200px;
+/*    left: 50%;*/
+/*    margin-left: -76px;*/
+    text-align: center;
+    width: 100%;
+    z-index: 9999;
+}
+
+nav ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+/*
 .menudown img {
     padding-right: 10px;
 }
+*/
 
+nav ul li a {
+    color:rgb(50,50,50);
+    text-decoration: none;
+}
+
+/*
+nav.stick {
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+}
+*/
+
+a.nav-active {
+    color: red;
+    text-decoration: underline;
+}
 
 .background {
     width:100%;
     margin: 0;
 }
 
+.div {
+    width:100%;
+    height:100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#home, #home2 {
+    background-image: url(/images/roomies.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+
+.green_box {
+    height: inherit;
+    background-color: green;
+    opacity: 0.25;
+}
+
 #about {
     background-image: url(/images/about-img.png);
     background-repeat: no-repeat;
     background-position: center;
-    display: table;
+    display: absolute;
     text-align: center;
-    height: 900px;
+    height: 100%;
     margin: 0;
 }
+#resume {
+    bottom: 0px;
+}
+
 span {
     display: table-cell;
     vertical-align: middle;
@@ -73,13 +151,14 @@ span {
     font-size: 13px;
     font-weight: 600;
     letter-spacing: 0.2em;
-    
 }
 .work {
     margin-left: 50px;
     height: 600px;
     width: inherit;
+    
 }
+
 .work img {
     vertical-align: middle;
     padding: 0 50px;
