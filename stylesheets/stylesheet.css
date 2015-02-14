@@ -1,16 +1,35 @@
-@media (max-width: 480px) {
+@media (min-width: 480px) {
+    nav ul li {
+        display: inline;
+        padding: 0 10px 0 10px;
+    }
+    
+    #home, #home2 {
+        background-image: url(/images/roomies.jpg)
+    }
+    
     #about {
-        background-image: url(/images/about-480.jpg);
-        width: 480px;
-        height: 320px;
+        background-image: url(/images/about.png);
+    }
+    
+    span {
+        line-height: 32px;
+        padding: 0 120px 0 120px;
+        font-size: 36pt;
     }
 }
 
-@media (min-width: 960px) and (max-width: 1024) {
+@media (max-width: 480px) {
     #about {
-        background-image: url(/images/about.png);
-        width: 1024px;
-        height: 768px;
+        background-image: url(/images/about-480.jpg);
+    }
+    
+    ul li a {
+        font-size: 24pt;   
+    }
+    
+    span {
+        font-size: 36pt;    
     }
 }
 
@@ -20,30 +39,81 @@ html, body {
     margin:0;
     background-color: #ebebeb;
 }
-.div {
-    width:100%;
-    height:100%;
-}
+
+/* navigation */
+
 .menu {
     position:fixed;
     display: block;
     top:20px;
     left:50%;
-    margin-left: -13px;
-}
-.menudown {
-    position:fixed;
-    top:-100px;
-    left: 50%;
-    margin-left: -76px;
-    width: 240px;
+/*    margin-left: -13px;*/
+    cursor: pointer;
 }
 
+nav {
+    position: fixed;
+    top:-200px;
+/*    left: 50%;*/
+/*    margin-left: -76px;*/
+    text-align: center;
+    width: 100%;
+    z-index: 9999;
+}
+
+nav ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+/*
 .menudown img {
     padding-right: 10px;
 }
+*/
+
+nav ul li a {
+    color:rgb(50,50,50);
+    text-decoration: none;
+}
+
+/*
+nav.stick {
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+}
+*/
+
+a.nav-active {
+    color: red;
+    text-decoration: underline;
+}
+
 .background {
     width:100%;
+}
+
+.div {
+    width:100%;
+    height:100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#home, #home2 {
+    background-image: url(/images/roomies.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+
+.green_box {
+    height: inherit;
+    background-color: green;
+    opacity: 0.25;
 }
 
 #about {
@@ -52,14 +122,11 @@ html, body {
     background-position: center;
     display: table;
     text-align: center;
-    height: 640px;
+    height: 100%;
 }
 
 span {
     display: table-cell;
     vertical-align: middle;
     font-family: 'Tangerine', serif;
-    font-size: 18px;
-    line-height: 32px;
-    padding: 0 120px 0 120px;
 }
