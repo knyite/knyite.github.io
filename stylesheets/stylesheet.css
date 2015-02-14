@@ -138,45 +138,27 @@ span {
     font-size: 16px;
     line-height: 36px;
     letter-spacing: 0.1em;
-<<<<<<< Updated upstream
-    padding: 300px 0 300px 0;
+    padding: 300px 0 200px 0;
 }
 
-/*
-=======
-    padding: 120px;
-}
 #resume {
-    margin-top: 25px;
+/*    margin-top: 25px;*/
 }
->>>>>>> Stashed changes
+
 #work {
     font-size: 13px;
     font-weight: 600;
     letter-spacing: 0.2em;
-<<<<<<< Updated upstream
     height: 100%;
-=======
     display: inline;
->>>>>>> Stashed changes
-}
-.work {
-    margin-left: 50px;
-    width: inherit;
-    height: 100%;
 }
 
-#images{
-    width: 3000px;
-    height: 600px;
-    white-space: nowrap;
-}
-
-.work img {
+#images img {
+    text-align: center;
     vertical-align: middle;
-    padding: 0 50px;    
+    padding: 0 25px;  
 }
-*/
+
 
 ul,li {
     list-style: none;
