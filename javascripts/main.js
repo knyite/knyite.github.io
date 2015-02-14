@@ -174,6 +174,8 @@
     
     document.getElementById("images").style.overflowX = "scroll";
 
+    document.getElementById("images").style.overflowX = "scroll";
+    
 })();
 
 $(document).on("scrollstart",function() {

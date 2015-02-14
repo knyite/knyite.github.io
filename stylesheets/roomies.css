@@ -3,39 +3,33 @@
         display: inline;
         padding: 0 10px 0 10px;
     }
-    
-    #home, #home2 {
-        background-image: url(/images/roomies.jpg)
-    }
-    
-    #about {
-        background-image: url(/images/about.png);
-    }
-    
-    span {
-        line-height: 32px;
-        padding: 0 120px 0 120px;
-        font-size: 36pt;
-    }
-    
-    #images {
-        width: 100%;
+
+    #main, #info {
+        background-image: url(/images/roomies.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        display: absolute;
+        text-align: center;
         height: 100%;
-        white-space: nowrap;
+        margin: 0;
     }
 
+    #info span {
+        height: inherit;
+        background-color: #25b89b;
+        opacity: 0.8;
+    }
+
+    span {
+        line-height: 32px;
+        padding: 120px;
+        font-size: 36pt;
+    }
 
 }
 
 @media (max-width: 480px) {
-    #about {
-        background-image: url(/images/about-480.jpg);
-    }
-    
-    ul li a {
-        font-size: 24pt;   
-    }
-    
+
     span {
         font-size: 36pt;    
     }
@@ -56,15 +50,15 @@ html, body {
     display: block;
     top:20px;
     left:50%;
-/*    margin-left: -13px;*/
+    /*    margin-left: -13px;*/
     cursor: pointer;
 }
 
 nav {
     position: fixed;
     top:-200px;
-/*    left: 50%;*/
-/*    margin-left: -76px;*/
+    /*    left: 50%;*/
+    /*    margin-left: -76px;*/
     text-align: center;
     width: 100%;
     z-index: 9999;
@@ -78,7 +72,7 @@ nav ul {
 
 /*
 .menudown img {
-    padding-right: 10px;
+padding-right: 10px;
 }
 */
 
@@ -89,9 +83,9 @@ nav ul li a {
 
 /*
 nav.stick {
-    position: fixed;
-    top: 0;
-    z-index: 10000;
+position: fixed;
+top: 0;
+z-index: 10000;
 }
 */
 
@@ -112,25 +106,22 @@ a.nav-active {
     padding: 0px;
 }
 
-#home {
+#main, #info {
     background-image: url(/images/roomies.jpg);
-    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100%;
-}
-
-#about {
-    background-image: url(/images/about-img.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    display: absolute;
     text-align: center;
     height: 100%;
     margin: 0;
 }
-#resume {
-    bottom: 0px;
+
+.green_box {
+    height: inherit;
+    background-color: #25b89b;
+    opacity: 0.8;
 }
+
 
 span {
     display: table-cell;
@@ -138,46 +129,6 @@ span {
     font-size: 16px;
     line-height: 36px;
     letter-spacing: 0.1em;
-<<<<<<< Updated upstream
-    padding: 300px 0 300px 0;
-}
-
-/*
-=======
     padding: 120px;
 }
-#resume {
-    margin-top: 25px;
-}
->>>>>>> Stashed changes
-#work {
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 0.2em;
-<<<<<<< Updated upstream
-    height: 100%;
-=======
-    display: inline;
->>>>>>> Stashed changes
-}
-.work {
-    margin-left: 50px;
-    width: inherit;
-    height: 100%;
-}
 
-#images{
-    width: 3000px;
-    height: 600px;
-    white-space: nowrap;
-}
-
-.work img {
-    vertical-align: middle;
-    padding: 0 50px;    
-}
-*/
-
-ul,li {
-    list-style: none;
-}
