@@ -171,6 +171,8 @@
             }
         }
     });
+    
+    document.getElementById("images").style.overflowX = "scroll";
 
 })();
 
