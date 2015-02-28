@@ -88,6 +88,9 @@ html, body {
     color: #ebebeb;
     font-size: 14pt;
     letter-spacing: 0.1em;
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
 }
 
 .app {
@@ -131,6 +134,7 @@ html, body {
     position: relative;
     bottom: 160px;
     margin-bottom: 100px;
+    margin-top: 400px;
     margin-left: 15%;
     width: 200px;
 }
