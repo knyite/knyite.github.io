@@ -62,7 +62,8 @@
 html, body {
     width: 100%;
     height: 100%;
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
     background-color: #EBEBEB;
     font-family: 'PT Sans', sans-serif;
     font-size: 10pt;
@@ -72,6 +73,7 @@ html, body {
     width: 100%;
     height: 100%;
 }
+
 
 #logo {
     margin-bottom: 0;

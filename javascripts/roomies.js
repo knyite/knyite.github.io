@@ -1,24 +1,5 @@
-jQuery(function($) {
-    $('#btnResume').click(function() {
-        $('#resumeBlock').css('visibility', 'visible');
-        $('#resume').css('visibility', 'visible');
-    });
-    
-    $('#exit').click(function() {
-        $('#resumeBlock').css('visibility', 'hidden');
-        $('#resume').css('visibility', 'hidden');
-    });
-    
-    $(document).keyup(function(e) {
-      if (e.keyCode == 27) $('#exit').click();   // esc
-    });
-    
-    setInterval(function() {
-        for (var i = 0; i < 5; i++) {
-            $('html,body').scrollTo($('homeBg'+i).hash, $('homeBg'+i).hash);
-        }
-    }, 1000);
-    
+jQuery(function($) {   
+
     window.addEventListener("scroll", function(event) {
         var top = this.scrollY;
 //            left =this.scrollX;
@@ -95,14 +76,6 @@ jQuery(function($) {
             // $('nav').mouseover();
             $('html,body').scrollTo(this.hash, this.hash);
         });
-
-        $("#imageButtons a").click(function (ev) {
-            ev.preventDefault();
-            // var padding = $('#work ul li:first-child').css('padding-left').replace(/[^-\d\.]/g, '');
-            $('#work ul').scrollTo(this.hash, {duration:'slow'});
-        });
-
-        document.getElementById("images").style.overflowX = "scroll";
 
         // var setSkrollr = function($el, data) {
         //     for (var i = 0, l = data.length; i < l; i++) {
