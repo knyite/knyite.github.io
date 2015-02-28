@@ -74,11 +74,97 @@ html, body {
 }
 
 #logo {
-    vertical-align: middle;
+    margin-bottom: 0;
 }
-#wireframe {
+
+#roomies-wireframe {
+    background-image: url(/images/roomies/wireframes.png);
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100%;
+    width: 100%;
     vertical-align: center;
     text-align: center;
+    color: #ebebeb;
     font-size: 14pt;
-    font-weight: 800;
+    letter-spacing: 0.1em;
+}
+
+.app {
+    position:relative;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+/*    overflow:hidden;*/
+    height: 561px;
+    width: 100%;
+    margin-top: -581px;
+}
+
+#app {
+    height: 4000px;
+}
+
+#app img {
+    position: fixed;
+    top: 60px;
+    left: 50%;
+    right: 50%;
+    margin-left: -160px;
+}
+
+.app div {
+    height: 502px;
+    width: 282px;
+    position: relative;
+    left: 50%;
+    margin-left: -120px;
+}
+.app div img {
+    width: 282px;
+    height: auto;
+    text-align: left;
+}
+
+#app p {
+    position: relative;
+    bottom: 160px;
+    margin-bottom: 100px;
+    margin-left: 15%;
+    width: 200px;
+}
+
+.app div[class^=appPic] {
+    position:relative;
+    width:100%;
+    height:100%;
+    background-size:cover;
+    background-position:center center;
+    opacity:0;
+    transition:1s all ease;
+}
+.app div[class^=appPic]:first-child {
+    opacity:1;
+}
+.app div[class^=appPic]:target {
+    opacity:1;
+}
+.appNav {
+    position:fixed;
+    left:15px;
+    top:50%;
+    transform:translate(0, -50%);
+}
+.appNav a {
+    display:block;
+    width:10px;
+    height:10px;
+    margin:5px 0;
+    background:#666;
+    border:2px solid #fff;
+    box-shadow:0 0 3px rgba(66,66,66,0.4);
+    border-radius:50%;
+    line-height:9999px;
+    overflow:hidden;
 }

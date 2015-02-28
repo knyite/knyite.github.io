@@ -15,6 +15,19 @@ jQuery(function($) {
         }
     }, 1000);
     
+    window.addEventListener("scroll", function(event) {
+        var top = this.scrollY;
+//            left =this.scrollX;
+//        console.log(top);
+        if (top > 2700) {
+            $('#app img').css('display', 'block');
+        } else if (top > 3500) {
+            $('#app div img').src("images/roomies/app/ROOMIES-V24.jpg");
+        } else {
+            $('#app img').css('display', 'none');
+        }
+    }, false);
+    
     $(document).on("scrollstart",function() {
         if ($('nav').position().top < 0) {
             $('.menu').animate({
