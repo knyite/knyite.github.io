@@ -5,40 +5,177 @@
     }
     
     #home, #home2 {
-        background-image: url(/images/roomies.jpg)
+        background-image: url(/images/roomies.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100%;
     }
     
     #about {
         background-image: url(/images/about.png);
     }
-    
+
+    /* navigation */
+
+    .menu {
+        position:fixed;
+        display: block;
+        top:20px;
+        left:50%;
+    /*    margin-left: -13px;*/
+        cursor: pointer;
+    }
+
+    nav {
+        position: fixed;
+        top:-200px;
+    /*    left: 50%;*/
+    /*    margin-left: -76px;*/
+        text-align: center;
+        width: 100%;
+        z-index: 9999;
+    }
+
+    nav ul {
+        list-style-type:none;
+        margin:0;
+        padding:0;
+    }
+
+    /*
+    .menudown img {
+        padding-right: 10px;
+    }
+    */
+
+    nav ul li a {
+        color:rgb(50,50,50);
+        text-decoration: none;
+    }
+
+    /*
+    nav.stick {
+        position: fixed;
+        top: 0;
+        z-index: 10000;
+    }
+    */
+
+    a.nav-active {
+        color: red;
+        text-decoration: underline;
+    }
+
+    .background {
+        width:100%;
+        margin: 0;
+    }
+
+    .div, section {
+        width:100%;
+        height:100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
     span {
-        line-height: 32px;
-        padding: 0 120px 0 120px;
-        font-size: 36pt;
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: 0.1em;
+        padding: 440px 160px;
+    }
+
+    #work {
+        display: inline;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.2em;
+        /*height: 100%;*/
     }
     
-    #images {
+    #work ul {
+        padding-left: 0px;
         width: 100%;
-        height: 100%;
         white-space: nowrap;
         vertical-align: middle;
     }
 
+    #work ul li {
+        display: inline-block;
+        padding: 0 38%;
+    }
+
+    #work ul li img {
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    #work ul li:first-child {
+        padding-left: 35%;
+    }
+
+    #work ul li:last-child {
+        padding-right: 43%;
+    }
+
+    #imageButtons {
+        text-align: center;
+        vertical-align: top;
+    }
 
 }
 
 @media (max-width: 480px) {
-    #about {
-        background-image: url(/images/about-480.jpg);
+
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        background-color: #ebebeb;
+        font-family: 'PT Sans', serif;
+    }
+
+    .menu {
+        position:fixed;
+        display: block;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
     }
     
-    ul li a {
-        font-size: 24pt;   
+    nav {
+        position: fixed;
+        top:-200px;
+        text-align: left;
+        width: 100%;
+        z-index: 9999;
+        margin: 0px;
     }
     
-    span {
-        font-size: 36pt;    
+    nav ul {
+        padding: 0px;   
+    }
+    
+    nav ul li {
+        display: block;
+        background-color: rgba(255, 255, 255, .6);
+        padding: 0px 20px;
+    }
+    
+    nav ul li a {
+        font-size: 24pt;
+        color: #ff174b;
+        text-decoration: none;
+    }
+    
+    .div {
+        width:100%;
+        height:100%;
+        margin: 0px;
+        padding: 0px;
     }
 }
 
@@ -51,73 +188,83 @@ html, body {
 
 /* navigation */
 
-.menu {
-    position:fixed;
-    display: block;
-    top:20px;
-    left:50%;
-/*    margin-left: -13px;*/
-    cursor: pointer;
+    #about {
+        background-image: url(/images/about-480.jpg);
+    }
+    
+    span {
+        font-size: 18pt;    
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 16px;
+        line-height: 36px;
+        letter-spacing: 0.1em;
+        padding: 160px 40px;
+    }
+
+    #work {
+        display: inline;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.2em;
+        /*height: 100%;*/
+    }
+    
+    #work ul {
+        padding-left: 0px;
+        width: 100%;
+        white-space: nowrap;
+        vertical-align: middle;
+    }
+
+    #work ul li {
+        display: inline-block;
+        padding: 0 10%;
+    }
+
+    #work ul li img {
+        width: 100%;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    #work ul li:first-child {
+        padding-left: 4%;
+    }
+
+    #work ul li:last-child {
+        padding-right: 60px;
+    }
+
+    
+    #imageButtons {
+        width: 100%;
+        text-align: center;
+        vertical-align: bottom;
+    }
+
 }
 
-nav {
-    position: fixed;
-    top:-200px;
-/*    left: 50%;*/
-/*    margin-left: -76px;*/
-    text-align: center;
-    width: 100%;
-    z-index: 9999;
-}
-
-nav ul {
-    list-style-type:none;
-    margin:0;
-    padding:0;
-}
-
-/*
-.menudown img {
-    padding-right: 10px;
-}
-*/
-
-nav ul li a {
-    color:rgb(50,50,50);
-    text-decoration: none;
-}
-
-/*
-nav.stick {
-    position: fixed;
-    top: 0;
-    z-index: 10000;
-}
-*/
-
-a.nav-active {
-    color: red;
-    text-decoration: underline;
-}
-
-.background {
-    width:100%;
-    margin: 0;
-}
-
-.div {
+html, body {
     width:100%;
     height:100%;
-    margin: 0px;
-    padding: 0px;
+    margin:0;
+    background-color: #ebebeb;
+    font-family: 'PT Sans', serif;
 }
 
-#home {
+#home, #home2 {
     background-image: url(/images/roomies.jpg);
-    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 100%;
+}
+
+#home2 div {
+    background-color: #00BF9D;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
 }
 
 #about {
@@ -128,45 +275,14 @@ a.nav-active {
     height: 100%;
     margin: 0;
 }
-#resume {
-    bottom: 0px;
-}
 
+/*
 span {
-    display: table-cell;
-    vertical-align: middle;
-    font-size: 16px;
-    line-height: 36px;
-    letter-spacing: 0.1em;
-    padding: 300px 0 100px 0;
-    padding: 300px 0 200px 0;
+    line-height: 32px;
+    padding: 0 120px 0 120px;
+    font-size: 36pt;
 }
-
-#resume {
-/*    margin-top: 25px;*/
-}
-
-#work {
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 0.2em;
-    height: 100%;
-    display: inline;
-}
-
-#images img {
-    text-align: center;
-    vertical-align: middle;
-    padding: 0 30px;  
-}
-
-#images img:first-child {
-    padding-left: 100px;
-}
-
-#images img:last-child {
-    padding-right: 460px;
-}
+*/
 
 ul,li {
     list-style: none;
