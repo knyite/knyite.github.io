@@ -1,20 +1,29 @@
 @media (min-width: 480px) {
+    html, body {
+        height: 100%;   
+    }
     nav ul li {
         display: inline;
         padding: 0 10px 0 10px;
     }
-
+        
     .homeBg {
-/*        position:fixed;*/
+        /*        position:fixed;*/
         left:0;
         right:0;
         top:0;
         bottom:0;
-/*        height: 100%;*/
+        height: 100%;
         width: 100%;
         overflow:hidden;
     }
-    
+
+    .homeBg div {
+        width: 100%;
+        height: 100%;  
+        background-size:cover;
+    }
+
     .homeBg div[class^=section] {
         position:relative;
         width:100%;
@@ -29,24 +38,6 @@
     }
     .homeBG div[class^=section]:target {
         opacity:1;
-    }
-    .homeNav {
-        position:fixed;
-        left:15px;
-        top:50%;
-        transform:translate(0, -50%);
-    }
-    .homeNav a {
-        display:block;
-        width:10px;
-        height:10px;
-        margin:5px 0;
-        background:#666;
-        border:2px solid #fff;
-        box-shadow:0 0 3px rgba(66,66,66,0.4);
-        border-radius:50%;
-        line-height:9999px;
-        overflow:hidden;
     }
 
     /* navigation */
@@ -180,7 +171,7 @@
     #imageButtons a {
         padding: 0 5px;    
     }
-    
+
     #footer {
         background-color: #EB505D;
         height: 50px;
@@ -290,7 +281,7 @@
         text-align: center;
         vertical-align: bottom;
     }
-    
+
     #footer {
         background-color: #EB505D;
         height: 50px;

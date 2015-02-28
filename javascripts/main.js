@@ -14,10 +14,8 @@ jQuery(function($) {
     });
     
     setInterval(function() {
-        for (var i = 0; i < 5; i++) {
-            $('html,body').scrollTo($('homeBg'+i).hash, $('homeBg'+i).hash);
-        }
-    }, 1000);
+        document.location = '#homeBg'+Math.floor((Math.random() * 5) + 1);
+    }, 5000);
     
     window.addEventListener("scroll", function(event) {
         var top = this.scrollY;
