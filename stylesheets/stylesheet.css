@@ -198,6 +198,17 @@
     #imageButtons a {
         padding: 0 5px;    
     }
+    
+    #footer {
+        background-color: #EB505D;
+        height: 50px;
+        vertical-align: center;
+        text-align: center; 
+        margin-top: 50px;
+        padding: 20px 0;
+        color: #ebebeb; 
+        letter-spacing: 0.1em;
+    }
 
 }
 
@@ -313,8 +324,6 @@ html, body {
     font-family: 'PT Sans', sans-serif;
     font-size: 10pt;
 }
-
-
 
 #about {
     background-color: #EBEBEB;
