@@ -1,4 +1,20 @@
 jQuery(function($) {
+    $('#btnResume').click(function() {
+        $('#resumeBlock').css('visibility', 'visible');
+        $('#resume').css('visibility', 'visible');
+    });
+    
+    $('#exit').click(function() {
+        $('#resumeBlock').css('visibility', 'hidden');
+        $('#resume').css('visibility', 'hidden');
+    });
+    
+    setInterval(function() {
+        for (var i = 0; i < 5; i++) {
+            $('html,body').scrollTo($('homeBg'+i).hash, $('homeBg'+i).hash);
+        }
+    }, 1000);
+    
     $(document).on("scrollstart",function() {
         if ($('nav').position().top < 0) {
             $('.menu').animate({
@@ -87,4 +103,5 @@ jQuery(function($) {
         // });
 
     });
+    
 });
