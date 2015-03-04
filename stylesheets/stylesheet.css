@@ -236,7 +236,7 @@
         padding: 0px;
     }
 
-    span {
+span {
         font-size: 13pt;    
         display: table-cell;
         vertical-align: middle;
@@ -312,13 +312,13 @@ html, body {
     margin: 0;
 }
 
+/*
+span {
+    line-height: 32px;
+    padding: 0 120px 0 120px;
+    font-size: 36pt;
+}
+
 ul,li {
     list-style: none;
 }
-
-a {
-    color: #EB505D;
-    text-decoration: none;
-    letter-spacing: 0.1em;
-}
-
