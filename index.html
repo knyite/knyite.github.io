@@ -10,14 +10,16 @@
         <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet-web.css">
         <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet-tablet.css">
         <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet-mobile.css">
-        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans">
+        <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
         <!-- Bootstrap core CSS -->
         <!-- <link rel="stylesheet" href="assets/css/bootstrap-3.3.2.css"> -->
         <!--	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">-->
 
-        <!-- Font Awesome (font icons) - http://goo.gl/XfBd3 -->
-        <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+        <!--
+Font Awesome (font icons) - http://goo.gl/XfBd3 
+<link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+-->
 
         <!-- Custom style for this website -->
         <link rel='stylesheet' href='stylesheets/custom-style.css'>
@@ -25,7 +27,7 @@
     </head>
 
     <body>
-        <!--            <div id="nav-anchor"></div>-->
+        <!-- Navigation -->
         <!--
 <img class="menu" src="/images/menu.png">
 <nav>
@@ -58,17 +60,29 @@
 </div>
 -->
         <div id="fullMenu">
-            <div id="fullMenuExit">CLOSE X</div>
+            <ul>           
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#work">WORK</a></li>
+                <li><a href="mailto:knyite@naver.com">EMAIL</a></li>
+            </ul>
+            <div id="fullMenuExit">
+                <img src="images/extra/close.png">
+            </div>
+
         </div>
+
+
         <!-- /#push_sidebar -->
 
         <div class="div">
             <section id="home">
                 <div id="homeText">
-                    <h1>GRAPHIC DESIGNER</h1>
-                    Crafting experiences and seeking to make the complex clear &amp; beautiful.
+                    <h1>GRAPHIC DESIGNER</h1><br><br><br><br>
+                    <!--                    Designing experiences and seeking to make the complex clear &amp; beautiful.-->
+                    <a href="#work"><img src="images/extra/viewWorks.png"></a>
                 </div>
-                <img src="images/test-1.jpg">
+                <img id="homeImg" src="images/index/home-bc-y.jpg">
             </section>
 
             <!--
@@ -85,18 +99,22 @@
 
             <section id="about">
                 <span>
-                    <img src="images/about.png"><br><br>
-                    <b>Nayoung Kim</b> was born in Daegu and raised in Vancouver. She graduated from School of Visual Arts in New York while majoring in Graphic Design with concentration in Interaction Design. Currently living in Seoul, she loves to work on branding, mobile design, &amp; art direction.
-                </span>
+                    <img src="images/index/about.png"><br><br>
+                    <strong>Nayoung Kim</strong> was born in Daegu and raised in Vancouver. She graduated from School of Visual Arts in New York while majoring in Graphic Design with concentration in Interaction Design. Currently living in Seoul, she loves to work on branding, mobile design, &amp; art direction.
+                </span><br>
                 <a href="#resume" id="btnResume">MORE INFO<br>V</a>
             </section>
 
             <div id="resumeBlock">
             </div>
             <div id="resume">
-                <section id="exit">CLOSE X</section>
+                <img src="images/index/resume.png">
+                <section id="resumeExit">
+                    <img src="images/extra/close.png">
+                </section>
             </div>
 
+<!--
             <section id="work">
                 <ul id="images">
                     <li id="hitchcock"><a href="/hitchcock.html"><img src="images/thumbnail/hitchcock.png"></a></li>
@@ -117,13 +135,20 @@
                     <a href="#allwork" id="allwork">VIEW ALL WORKS</a>
                 </div>
             </section>
+-->
+            
+            
+
 
             <section id="footer">
-                <a href="#home"><img src="images/arrow-top.png"></a><br><br>2015
+                <a href="#home">Λ<br>TOP</a><br><br>
+                <p class="copyright">Designed and Coded by Nayoung Kim with help from dxd Seminar<br>2015</p>
             </section>
 
         </div>
     </body>
+
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/1.4.14/jquery.scrollTo.min.js"></script>
     <script type="text/javascript" src="/javascripts/scroll.js"></script>

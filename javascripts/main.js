@@ -1,23 +1,23 @@
-jQuery(function($) {
-    $('#btnResume').click(function() {
+jQuery(function ($) {
+    $('#btnResume').click(function () {
         $('#resumeBlock').css('visibility', 'visible');
         $('#resume').css('visibility', 'visible');
     });
     
-    $('#exit').click(function() {
+    $('#resumeExit').click(function () {
         $('#resumeBlock').css('visibility', 'hidden');
         $('#resume').css('visibility', 'hidden');
     });
     
-    $(document).keyup(function(e) {
+    $(document).keyup(function (e) {
       if (e.keyCode == 27) $('#exit').click();   // esc
     });
     
-    setInterval(function() {
-        document.location = '#homeBg'+Math.floor((Math.random() * 5) + 1);
+    setInterval(function () {
+        document.location = '#homeBg' + Math.floor((Math.random() * 5) + 1);
     }, 5000);
     
-    window.addEventListener("scroll", function(event) {
+    window.addEventListener("scroll", function (event) {
         var top = this.scrollY;
 //            left =this.scrollX;
 //        console.log(top);
@@ -30,7 +30,7 @@ jQuery(function($) {
         }
     }, false);
     
-    $(document).on("scrollstart",function() {
+    $(document).on("scrollstart", function () {
         if ($('nav').position().top < 0) {
             $('.menu').animate({
                 top: -200
@@ -41,8 +41,8 @@ jQuery(function($) {
         }
     });
 
-    $(document).on("scrollstop",function() {
-        if(!$('nav').is(":hover") && $('.menu').position().top < 0) {
+    $(document).on("scrollstop", function () {
+        if (!$('nav').is(":hover") && $('.menu').position().top < 0) {
             setTimeout(function () {
                 $('.menu').animate({
                     top: 20
@@ -54,7 +54,7 @@ jQuery(function($) {
         }
     });
 
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('.menu').click(function () {
             $('.menu').animate({
                 top: -200
@@ -74,7 +74,7 @@ jQuery(function($) {
                 }, 1000);
             }
         }, function () {
-            if(!$('nav').is(":hover") && $('.menu').position().top < 0) {
+            if (!$('nav').is(":hover") && $('.menu').position().top < 0) {
                 $('.menu').animate({
                     top: 20
                 }, 1000);
@@ -97,7 +97,7 @@ jQuery(function($) {
         $("#imageButtons a").click(function (ev) {
             ev.preventDefault();
             // var padding = $('#work ul li:first-child').css('padding-left').replace(/[^-\d\.]/g, '');
-            $('#work ul').scrollTo(this.hash, {duration:'slow'});
+            $('#work ul').scrollTo(this.hash, {duration: 'slow'});
         });
 
         document.getElementById("images").style.overflowX = "scroll";
