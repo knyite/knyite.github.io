@@ -13,12 +13,12 @@ jQuery(function($) {
         if (e.keyCode == 27) $('#exit').click();   // esc
     });
 
-//    document.getElementById("images").style.overflowX = "scroll";
-//
-//    $("#imageButtons a").click(function (ev) {
-//        ev.preventDefault();
-//        $('#work ul').scrollTo(this.hash, {duration:'slow'});
-//    });
+    document.getElementById("images").style.overflowX = "scroll";
+
+    $("#imageButtons a").click(function (ev) {
+        ev.preventDefault();
+        $('#work ul').scrollTo(this.hash, {duration:'slow'});
+    });
 
     $("#menu").click(function() {
         $("#fullMenu").css('display', 'block');
