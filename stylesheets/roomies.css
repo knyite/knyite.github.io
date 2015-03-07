@@ -1,3 +1,8 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 html, body {
     width:100%;
     height:100%;
@@ -81,7 +86,7 @@ a {
     letter-spacing: 0.1em;
     line-height: 18pt;
     padding: 125px 0 25px 0;
-    margin-left: 300px;
+    margin-left: 175px;
     width: 35%;
 }
 
@@ -97,7 +102,7 @@ a {
 }
 
 #footer {
-    background-color: #ebebeb;
+    background-color: #636363;
     height: 150px;
     vertical-align: center;
     text-align: center; 
@@ -107,7 +112,7 @@ a {
 }
 
 #footer a {
-    color: #636363;
+    color: #b2b2b2;
 }
 
 #footer img {
@@ -115,7 +120,7 @@ a {
 }
 
 .copyright {
-    color: #636363;
+    color: #b2b2b2;
     font-weight: 300;
     letter-spacing: 0.1em;
 }
