@@ -28,7 +28,7 @@ jQuery(function($) {
         $("#fullMenu").css('display', 'none');
     });
     
-    $("#fullMenuExit ul li a").click(function() {
+    $("#fullMenu ul li a").click(function() {
         $("#fullMenu").css('display', 'none');
     });
 });
